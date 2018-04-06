@@ -49,4 +49,15 @@ function longPlaneteerCalls(words) {
 
 
 function findTheCheese (foods) {
+  foods.forEach(function(word) {
+    if (word === 'cheddar') {
+      return word
+    } else if (word === 'gouda') {
+      return word
+    } else if (word === 'camembert') {
+      return word
+    } else {
+      return 'no cheese!'
+    }
+  })
 }
