@@ -54,6 +54,6 @@ function findTheCheese (foods) {
       return foods[i];
     } else if (foods[i] === 'camembert') {
       return foods[i];
-        }
-    } return 'no cheese!'
+    }
+  } return 'no cheese!'
 }
