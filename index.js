@@ -34,14 +34,18 @@ function longPlaneteerCalls(words) {
 }
 
 /* 
-function longPlaneteerCalls(words) {
-  words.forEach(function(word) {
-    if (word.length > 4) {
-      return true
-    } else {
-      return false
-    }
-  })
+function forEachTest(words) {
+    let array = []
+    words.forEach(function(word) {
+        //console.log(word.length)
+        array.push(word.length)
+        })
+    console.log(array)
+    for (let i = 0; i < words.length; i++) {
+        if (array[i] > 4) {
+            return true
+        } return false
+    } 
 }
 */
 
