@@ -1,6 +1,6 @@
 function dwarfRollCall(dwarves) {
   let output = ""
-  for (let i = 0, l = dwarves.length; i < l; i++) {
+  for (let i = dwarves.length / 2, l = dwarves.length; i < l; i++) {
     output += `${i + 1}. ${dwarves[i]} `
   }
   return output
@@ -62,6 +62,8 @@ function forEachTest(words) {
 
 
 function findTheCheese (foods) {
+  cheeses = ['cheddar', 'gouda', 'camembert', 'swiss']
+  
   for (let i = 0; i < foods.length; i++) {
     if (foods[i] === 'cheddar') {
       return foods[i];
@@ -76,6 +78,13 @@ function findTheCheese (foods) {
 }
 
 function wordsWithB(words){
+  let output =[]
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].startsWith('b') === true) {
+      output.push(words[i])
+    } 
+      
+  } return output
 }
 
 // wordsWithB(['james', 'sally', 'bob']) => ['bob']
