@@ -65,7 +65,12 @@ function findTheCheese (foods) {
   cheeses = ['cheddar', 'gouda', 'camembert', 'swiss']
   
   for (let i = 0; i < foods.length; i++) {
-    if (foods[i] === 'cheddar') {
+    for(let j = 0; j < cheeses.length; j++){
+      if(foods[i] === cheeses[j]){
+        return foods[i]
+      }
+    }
+/*    if (foods[i] === 'cheddar') {
       return foods[i];
     } else if (foods[i] === 'gouda') {
       return foods[i];
@@ -73,7 +78,7 @@ function findTheCheese (foods) {
       return foods[i];
     } else if (foods[i] === 'swiff') {
       return foods[i];
-    }    
+    }   */ 
   } return 'no cheese!'
 }
 
