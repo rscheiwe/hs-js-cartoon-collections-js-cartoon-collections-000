@@ -6,14 +6,15 @@ function dwarfRollCall(dwarves) {
   return output
 }
 
-/*function dwarfRollCall(array) {
-  let output = []
+/*
+function dwarfDictionary(array) {
+  let ouput = {}
   for (let i = 0; i < array.length; i++) {
-    output.push('${i + 1}. ${array[i]')
-    output.join(', ')
+    output[i + 1] = array[i]
   }
   return output
 }
+
 */
 
 function summonCaptainPlanet(planeteerCalls){
@@ -24,6 +25,16 @@ function summonCaptainPlanet(planeteerCalls){
   }
   return output
 }
+
+/*
+function captainPlanet(array) {
+  let output = []
+  for (let i = 0; i < array.length; i++) {
+    output.push(array[i].toUpperCase() + '!')
+  }
+  return output
+}
+*/
 
 function longPlaneteerCalls(words) {
   for (let i = 0, l = words.length; i < l; i++) {
