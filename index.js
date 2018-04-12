@@ -74,3 +74,11 @@ function findTheCheese (foods) {
     }    
   } return 'no cheese!'
 }
+
+function wordsWithB(words){
+}
+
+// wordsWithB(['james', 'sally', 'bob']) => ['bob']
+// wordsWithB(['james', 'bob', 'billy']) => ['bob', 'billy']
+// wordsWithB(['sally', 'james']) => []
+}
